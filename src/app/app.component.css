@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  background-color: #9e9172;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.announcement-slider {
+  display: flex;
+  animation: slide 15s infinite;
+}
+
+.announcement-slider p {
+  margin: 0;
+  flex: 0 0 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #39424d;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.search-bar button {
+  background-color: #f8cca2;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.icons a:hover {
+  color: #f8cca2;
+}
+.icons i {
+  font-size: 24px; /* Adjust size as needed */
+  color: #ffffff; /* Ensure icons are visible */
+}
+
+/* Menu Bar */
+.menu-bar {
+  background-color: #f8cca2;
+  padding: 10px 20px;
+}
+
+.menu-bar ul {
+  list-style: none;
+  /* margin: 0; */
+  margin: 0 13px 0 140px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-bar ul li a {
+  color: #39424d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-bar ul li a:hover {
+  color: #9e9172;
+}
+/* Menu Bar */
+.menu-bar {
+  background-color: #f8cca2;
+  padding: 10px 20px;
+  text-align: center; /* Center the content */
+}
+
+.menu-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block; /* Make the ul inline-block to center it */
+}
+
+.menu-bar ul li {
+  display: inline-block; /* Display list items horizontally */
+  margin: 0 10px; /* Add spacing between menu items */
+}
+
+.menu-bar ul li a {
+  color: #39424d;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.menu-bar ul li a:hover {
+  color: #9e9172;
+}
